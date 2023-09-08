@@ -1,4 +1,4 @@
-package com.goldilocks;
+package com.goldilocks.Q1;
 
 public class DecimalToBinary {
 	public static void main(String[] args) {
