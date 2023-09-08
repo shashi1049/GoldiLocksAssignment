@@ -39,6 +39,7 @@ public class EmployeeController {
 		
 	}
 	
+	@GetMapping("/AllEmp")
 	public ResponseEntity<List<Employee>> viewAllEmployee() throws EmployeeExcep{
 		
 		List<Employee> employees = employeeServ.viewAllEmployee();

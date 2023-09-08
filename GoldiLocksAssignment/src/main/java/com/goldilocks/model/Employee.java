@@ -23,3 +23,5 @@ public class Employee {
 
     int emp_age;
 }
+
+//Q.3 and Q.6
