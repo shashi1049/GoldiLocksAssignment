@@ -12,7 +12,7 @@ public interface EmployeeServ {
 	
 	public Employee registerEmployee(Employee emp) throws EmployeeExcep;
 	
-	public Employee EmployeeByID(int id)throws EmployeeExcep;
+	public Employee employeeByID(int id)throws EmployeeExcep;
 
     public List<Employee> viewAllEmployee()throws EmployeeExcep;
 

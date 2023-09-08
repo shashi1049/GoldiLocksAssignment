@@ -26,7 +26,7 @@ public class EmployeeServiceImpl implements EmployeeServ{
 	}
 
 	@Override
-	public Employee EmployeeByID(int id) throws EmployeeExcep {
+	public Employee employeeByID(int id) throws EmployeeExcep {
 		// TODO Auto-generated method stub
 		
 		Optional<Employee> empOptional = empRepo.findById(id);
