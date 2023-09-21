@@ -19,8 +19,17 @@ public class CSV {
 	            PrintWriter pw = new PrintWriter(new FileWriter(output));
 
 	            String line;
+	            double sum = 0.0;
 	            while ((line = br.readLine()) != null) {
-	                pw.println(line);
+	                
+	                String[] values = line.split(",");
+	                if (values.length >= 3) {
+	                	Integer num1 = Integer.parseInt(values[0]);
+	                	Integer num2 = Integer.parseInt(values[1]);
+	                	Integer num3 = Integer.parseInt(values[2]);
+	                    sum += num1 + num2 + num3;
+	                }
+	                pw.println(line +", "+ sum);
 	            }
 
 	            br.close();
